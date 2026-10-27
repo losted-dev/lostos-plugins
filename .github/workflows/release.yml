@@ -1,0 +1,42 @@
+# After a merge into main: checks everything once more, builds index.json and signs it with the key of the release robot, and commits the two files.
+# The key is a secret of the environment "signing" (set it up with required reviewers: every signing then waits for a person). It signs the index only:
+# the servers of lostOS trust that key for the index and for nothing else (scope "index" in trusted_keys.json).
+name: Sign the registry
+on:
+  push:
+    branches: [main]
+    paths: ["plugins/**", "developers.json", "revoked.json"]       # not index.json: the commit of the robot does not start it again
+concurrency: sign-registry
+permissions:
+  contents: write
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    environment: signing
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with: { repository: losted-dev/lostos-server, path: _server }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install cryptography
+      - name: Validate everything
+        env: { LOSTOS_SERVER: _server/server, PYTHONUTF8: "1" }
+        run: python ci/registry_ci.py validate .
+      - name: Build and sign the index
+        env:
+          LOSTOS_SERVER: _server/server
+          PYTHONUTF8: "1"
+          REGISTRY_SIGNING_KEY: ${{ secrets.REGISTRY_SIGNING_KEY }}
+        run: |
+          umask 077
+          printf '%s\n' "$REGISTRY_SIGNING_KEY" > "$RUNNER_TEMP/registry.pem"
+          python ci/registry_ci.py release . "$RUNNER_TEMP/registry.pem"
+          rm -f "$RUNNER_TEMP/registry.pem"
+      - name: Commit the signed index
+        run: |
+          git config user.name "lostos-release-robot"
+          git config user.email "release-robot@users.noreply.github.com"
+          git add index.json index.json.sig
+          git diff --cached --quiet || git commit -m "Sign the registry index"
+          git push

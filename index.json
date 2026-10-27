@@ -1,0 +1,44 @@
+{
+ "v": 1,
+ "updated": "2026-10-27T03:59:29Z",
+ "developers": [],
+ "revoked": [],
+ "plugins": [
+  {
+   "id": "ru.lostos.button-flash",
+   "name": "Вспышка по кнопке",
+   "version": "1.0.0",
+   "about": "Пример плагина для колонки: по нажатию центральной кнопки кольцо вспыхивает фиолетовым, а на часах появляется HI.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.button-flash-1.0.0.lstplugin",
+   "sha256": "8168db0925a41cb87bbf1dcf3e6f711056b16dd79a54c8f2f18edc715ae31305",
+   "size": 12963,
+   "min_firmware": ""
+  },
+  {
+   "id": "ru.lostos.edge-voice",
+   "name": "Голос Microsoft (бесплатно)",
+   "version": "1.0.0",
+   "about": "Нейроголос Microsoft Edge (Светлана, Дмитрий): бесплатно, без ключей и регистрации, нужен интернет. Тексты ответов уходят в Microsoft. Голос меняется файлом data/voice.txt.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.edge-voice-1.0.0.lstplugin",
+   "sha256": "6985a3ecd506e710d3ac295356dd17476a9b1e4693cc4357d9fd0522294bebf7",
+   "size": 7673,
+   "min_firmware": ""
+  },
+  {
+   "id": "ru.lostos.music-stats",
+   "name": "Треки за сегодня",
+   "version": "1.0.0",
+   "about": "Считает, сколько треков прозвучало сегодня, и показывает плитку на главной.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.music-stats-1.0.0.lstplugin",
+   "sha256": "fc3e4b83037b7b704ad0565f0c1204eb68df3f4bad68b72aa971a63b3d3ecf8d",
+   "size": 1514,
+   "min_firmware": ""
+  }
+ ]
+}

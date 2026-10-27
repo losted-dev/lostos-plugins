@@ -1,0 +1,42 @@
+# Checks every pull request. No secrets are used, the token is read-only, and the checking code is taken from main (not from the pull request),
+# so a pull request cannot change how it is checked. The report goes to the summary of the run and to an artifact; comment.yml posts it under the pull request.
+name: Check plugins
+on:
+  pull_request:
+    paths: ["plugins/**", "developers.json", "revoked.json", "index.json", "index.json.sig"]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: pr }
+      - uses: actions/checkout@v4
+        with: { ref: "${{ github.base_ref }}", path: main }
+      - uses: actions/checkout@v4
+        with: { repository: losted-dev/lostos-server, path: _server }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install cryptography
+      - name: Validate
+        id: validate
+        env:
+          LOSTOS_SERVER: _server/server
+          LOSTOS_PLUGAPI: https://plugapi.losted.dev
+          PYTHONUTF8: "1"
+        run: |
+          set +e
+          python main/ci/registry_ci.py validate pr --base main --report report.md
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          echo "${{ github.event.pull_request.number }}" > pr-number.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: |
+            report.md
+            pr-number.txt
+      - name: Fail when something is wrong
+        if: steps.validate.outputs.code != '0'
+        run: exit 1
