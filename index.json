@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-10-27T04:37:30Z",
+ "updated": "2026-10-29T00:55:26Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -19,13 +19,13 @@
   {
    "id": "ru.lostos.edge-voice",
    "name": "Голос Microsoft (бесплатно)",
-   "version": "1.0.0",
+   "version": "1.0.1",
    "about": "Нейроголос Microsoft Edge (Светлана, Дмитрий): бесплатно, без ключей и регистрации, нужен интернет. Тексты ответов уходят в Microsoft. Голос меняется файлом data/voice.txt.",
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.edge-voice-1.0.0.lstplugin",
-   "sha256": "ad10a3ee9968bc7279e5f4560d8ede56b279956b2dcb00147045d724023bd886",
-   "size": 7673,
+   "file": "plugins/ru.lostos.edge-voice-1.0.1.lstplugin",
+   "sha256": "e5426dc0ada090d267d4ed6cf16f70124ab4bd0873bd632a500dcf085a256a8e",
+   "size": 7907,
    "min_firmware": ""
   },
   {
