@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-10-30T13:08:18Z",
+ "updated": "2026-10-30T13:17:21Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -86,6 +86,18 @@
    "file": "plugins/ru.lostos.radio-1.2.0.lstplugin",
    "sha256": "3d7e63055e0e42a589b8ff62756868b7b435a5c7bb0a8e6179a93ecaee9c93c3",
    "size": 6295,
+   "min_firmware": "0.3.6"
+  },
+  {
+   "id": "ru.lostos.radio",
+   "name": "Интернет-радио",
+   "version": "1.2.1",
+   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.radio-1.2.1.lstplugin",
+   "sha256": "a690379e89bdb4c1ad000b0e31e97b7fdb5a4a7757c2624c92be7d6e76046b17",
+   "size": 6324,
    "min_firmware": "0.3.6"
   }
  ]
