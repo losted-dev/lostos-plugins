@@ -1,21 +1,9 @@
 {
  "v": 1,
- "updated": "2026-10-30T13:17:21Z",
+ "updated": "2026-10-30T13:31:39Z",
  "developers": [],
  "revoked": [],
  "plugins": [
-  {
-   "id": "ru.lostos.button-flash",
-   "name": "Вспышка по кнопке",
-   "version": "1.0.0",
-   "about": "Пример плагина для колонки: по нажатию центральной кнопки кольцо вспыхивает фиолетовым, а на часах появляется HI.",
-   "publisher": "losted.dev",
-   "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.button-flash-1.0.0.lstplugin",
-   "sha256": "b062eb34184a67895dcab8cc98b032d2d8ec74030b96f75b80291c461f0880f4",
-   "size": 12963,
-   "min_firmware": ""
-  },
   {
    "id": "ru.lostos.edge-voice",
    "name": "Голос Microsoft (бесплатно)",
@@ -43,61 +31,13 @@
   {
    "id": "ru.lostos.radio",
    "name": "Интернет-радио",
-   "version": "1.0.0",
+   "version": "1.2.2",
    "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.radio-1.0.0.lstplugin",
-   "sha256": "e5ff267cc72738864964e651c6eaab2f29882a29596df080cfb8f30e8130e6dc",
-   "size": 3149,
-   "min_firmware": "0.3.6"
-  },
-  {
-   "id": "ru.lostos.radio",
-   "name": "Интернет-радио",
-   "version": "1.0.1",
-   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
-   "publisher": "losted.dev",
-   "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.radio-1.0.1.lstplugin",
-   "sha256": "6337e4d0b8d2d17befa8c65ab6c9295f88e05f65169381b6a9c73afca25b4680",
-   "size": 3280,
-   "min_firmware": "0.3.6"
-  },
-  {
-   "id": "ru.lostos.radio",
-   "name": "Интернет-радио",
-   "version": "1.1.0",
-   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
-   "publisher": "losted.dev",
-   "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.radio-1.1.0.lstplugin",
-   "sha256": "789d0431f541f9c135c4b2f8d851ab27ce8cd2cd35bc61bad938fdeec8f42c26",
-   "size": 5450,
-   "min_firmware": "0.3.6"
-  },
-  {
-   "id": "ru.lostos.radio",
-   "name": "Интернет-радио",
-   "version": "1.2.0",
-   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
-   "publisher": "losted.dev",
-   "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.radio-1.2.0.lstplugin",
-   "sha256": "3d7e63055e0e42a589b8ff62756868b7b435a5c7bb0a8e6179a93ecaee9c93c3",
-   "size": 6295,
-   "min_firmware": "0.3.6"
-  },
-  {
-   "id": "ru.lostos.radio",
-   "name": "Интернет-радио",
-   "version": "1.2.1",
-   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
-   "publisher": "losted.dev",
-   "fingerprint": "e8ad7d1df89448c6",
-   "file": "plugins/ru.lostos.radio-1.2.1.lstplugin",
-   "sha256": "a690379e89bdb4c1ad000b0e31e97b7fdb5a4a7757c2624c92be7d6e76046b17",
-   "size": 6324,
+   "file": "plugins/ru.lostos.radio-1.2.2.lstplugin",
+   "sha256": "07846c4f506d28908dbf2a6a755486d7592094ae6f7bd86e7e69259bd24f5090",
+   "size": 6594,
    "min_firmware": "0.3.6"
   }
  ]
