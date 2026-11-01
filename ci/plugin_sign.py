@@ -88,10 +88,15 @@ def sign_package(data: bytes, priv: Ed25519PrivateKey, publisher: str) -> bytes:
     sig = {"v": 1, "publisher": publisher, "key": public_of(priv), "digest": digest, "sig": b64(priv.sign(PLUGIN_TAG + digest.encode())), "files": files_table(files)}
     out = io.BytesIO()
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as w:
+        def put(path, body):                                    # fixed dates: the same files and the same key give the same bytes, so a rebuild of a registry shows only what changed
+            zi = zipfile.ZipInfo(path, date_time=(1980, 1, 1, 0, 0, 0))
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = 0o644 << 16
+            w.writestr(zi, body)
         for path in sorted(files):
             if path != SIG_FILE:
-                w.writestr(path, files[path])
-        w.writestr(SIG_FILE, json.dumps(sig, ensure_ascii=False, indent=1))
+                put(path, files[path])
+        put(SIG_FILE, json.dumps(sig, ensure_ascii=False, indent=1))
     return out.getvalue()
 
 
