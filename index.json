@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-01T12:02:03Z",
+ "updated": "2026-11-01T12:13:57Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -12,9 +12,16 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.edge-voice-1.0.1.lstplugin",
-   "sha256": "e3aa625f7c8babed5f771f27a1a4244b594b0c54735c18df789a548f2849bc6b",
+   "sha256": "1b9d1190e8868c46d1221871a000f2d4f11c420083c351de9f265df3a209761e",
    "size": 7907,
-   "min_firmware": ""
+   "min_firmware": "",
+   "permissions": [
+    "speech.tts"
+   ],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": true,
+   "logo": "logos/ru.lostos.edge-voice.png"
   },
   {
    "id": "ru.lostos.music-stats",
@@ -26,7 +33,39 @@
    "file": "plugins/ru.lostos.music-stats-1.0.0.lstplugin",
    "sha256": "98a5c03d439fb7b6230eccc17016008b80e5c625bffbefbdcc20e7de9bb138eb",
    "size": 23152,
-   "min_firmware": ""
+   "min_firmware": "",
+   "permissions": [
+    "media.read",
+    "events.subscribe",
+    "storage",
+    "ui.tile"
+   ],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": true,
+   "logo": "logos/ru.lostos.music-stats.png"
+  },
+  {
+   "id": "ru.lostos.music-stats",
+   "name": "Треки за сегодня",
+   "version": "1.0.1",
+   "about": "Считает, сколько треков прозвучало сегодня, и показывает плитку на главной.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.music-stats-1.0.1.lstplugin",
+   "sha256": "32f973e592216126befcd86f5d87c604fb927595f968acb9c1011b4aabf2acc1",
+   "size": 23155,
+   "min_firmware": "",
+   "permissions": [
+    "media.read",
+    "events.subscribe",
+    "storage",
+    "ui.tile"
+   ],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": true,
+   "logo": "logos/ru.lostos.music-stats.png"
   },
   {
    "id": "ru.lostos.radio",
@@ -38,7 +77,29 @@
    "file": "plugins/ru.lostos.radio-1.2.2.lstplugin",
    "sha256": "09ece0ab2758c509a047c3ce5474b5ccbb7d46673b9b3291826ec78164e6157e",
    "size": 33097,
-   "min_firmware": "0.3.6"
+   "min_firmware": "0.3.6",
+   "permissions": [],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": false,
+   "logo": "logos/ru.lostos.radio.png"
+  },
+  {
+   "id": "ru.lostos.radio",
+   "name": "Интернет-радио",
+   "version": "1.2.3",
+   "about": "Тысячи радиостанций из открытого каталога radio-browser.info: «включи радио джаз», «включи Европу Плюс». Работает на самой колонке, сервер не нагружает.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.radio-1.2.3.lstplugin",
+   "sha256": "8964c23870cdf906103faeacd7b8589917c5b5124df93f517bc683504bf98a2b",
+   "size": 33096,
+   "min_firmware": "0.3.6",
+   "permissions": [],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": false,
+   "logo": "logos/ru.lostos.radio.png"
   },
   {
    "id": "ru.lostos.soundcloud",
@@ -48,9 +109,22 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.soundcloud-1.0.0.lstplugin",
-   "sha256": "e8309b1a932aae83212694106ab6f79341ed79baac28d82b959c7617976caddf",
+   "sha256": "faff980db995e7a11dfcf31afcf11d3138a2d943cb8919ede72ae1bd2872f8e8",
    "size": 32758,
-   "min_firmware": ""
+   "min_firmware": "",
+   "permissions": [
+    "stream.play",
+    "assistant.tools",
+    "storage",
+    "media.control",
+    "media.read",
+    "ui.tile",
+    "events.subscribe"
+   ],
+   "category": "",
+   "author": "ShadowBlade83",
+   "server_part": true,
+   "logo": "logos/ru.lostos.soundcloud.png"
   }
  ]
 }
