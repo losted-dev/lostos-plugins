@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-01T10:06:59Z",
+ "updated": "2026-11-01T12:02:03Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -12,7 +12,7 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.edge-voice-1.0.1.lstplugin",
-   "sha256": "e5426dc0ada090d267d4ed6cf16f70124ab4bd0873bd632a500dcf085a256a8e",
+   "sha256": "e3aa625f7c8babed5f771f27a1a4244b594b0c54735c18df789a548f2849bc6b",
    "size": 7907,
    "min_firmware": ""
   },
@@ -24,8 +24,8 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.music-stats-1.0.0.lstplugin",
-   "sha256": "48f983ddac4734786b3e38bcabc5db358f15e77a851b320a066b8baa9c831296",
-   "size": 1514,
+   "sha256": "98a5c03d439fb7b6230eccc17016008b80e5c625bffbefbdcc20e7de9bb138eb",
+   "size": 23152,
    "min_firmware": ""
   },
   {
@@ -36,8 +36,8 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.radio-1.2.2.lstplugin",
-   "sha256": "07846c4f506d28908dbf2a6a755486d7592094ae6f7bd86e7e69259bd24f5090",
-   "size": 6594,
+   "sha256": "09ece0ab2758c509a047c3ce5474b5ccbb7d46673b9b3291826ec78164e6157e",
+   "size": 33097,
    "min_firmware": "0.3.6"
   },
   {
@@ -48,8 +48,8 @@
    "publisher": "losted.dev",
    "fingerprint": "e8ad7d1df89448c6",
    "file": "plugins/ru.lostos.soundcloud-1.0.0.lstplugin",
-   "sha256": "e6d5e6ce761866a11f6a68720258b01ee5c456a3397ec5dff1a1ccbe9765dc94",
-   "size": 12430,
+   "sha256": "e8309b1a932aae83212694106ab6f79341ed79baac28d82b959c7617976caddf",
+   "size": 32758,
    "min_firmware": ""
   }
  ]
