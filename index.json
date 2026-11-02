@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-02T16:33:07Z",
+ "updated": "2026-11-02T19:17:55Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -33,6 +33,27 @@
    "file": "plugins/ru.lostos.fish-audio-1.1.0.lstplugin",
    "sha256": "85848c503d3387509abb4d5dc2363ec2814e05b65c81b8113deb8cf11e1b37e7",
    "size": 18766,
+   "min_firmware": "",
+   "permissions": [
+    "speech.tts",
+    "storage",
+    "assistant.tools"
+   ],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": true,
+   "logo": "logos/ru.lostos.fish-audio.png"
+  },
+  {
+   "id": "ru.lostos.fish-audio",
+   "name": "Голос Fish Audio",
+   "version": "1.2.0",
+   "about": "Озвучка ответов нейроголосом Fish Audio, в том числе клонированным: нужен свой ключ API с fish.audio и интернет. Тексты ответов уходят в Fish Audio. Ключ и голос вводятся на странице плагина в панели.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.fish-audio-1.2.0.lstplugin",
+   "sha256": "c7119d9b3ec4c18544099d2cdebe1106c685a0e5cb39b2deb8f775b3a4ddcc5d",
+   "size": 19003,
    "min_firmware": "",
    "permissions": [
     "speech.tts",
@@ -132,6 +153,31 @@
    "file": "plugins/ru.lostos.soundcloud-1.0.0.lstplugin",
    "sha256": "faff980db995e7a11dfcf31afcf11d3138a2d943cb8919ede72ae1bd2872f8e8",
    "size": 32758,
+   "min_firmware": "",
+   "permissions": [
+    "stream.play",
+    "assistant.tools",
+    "storage",
+    "media.control",
+    "media.read",
+    "ui.tile",
+    "events.subscribe"
+   ],
+   "category": "",
+   "author": "ShadowBlade83",
+   "server_part": true,
+   "logo": "logos/ru.lostos.soundcloud.png"
+  },
+  {
+   "id": "ru.lostos.soundcloud",
+   "name": "Soundiya",
+   "version": "1.0.1",
+   "about": "Музыка из SoundCloud на колонке: «включи в саундклауд …». Поиск, очередь, избранное с вашего профиля. Звук идёт через сервер.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.soundcloud-1.0.1.lstplugin",
+   "sha256": "7db0b2bfac45ede8dcb8eb553b6525c3f7a4a06e3aca120730a1c2f17e1f7d1c",
+   "size": 33905,
    "min_firmware": "",
    "permissions": [
     "stream.play",
