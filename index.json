@@ -1,6 +1,6 @@
 {
  "v": 1,
- "updated": "2026-11-01T12:13:57Z",
+ "updated": "2026-11-02T16:33:07Z",
  "developers": [],
  "revoked": [],
  "plugins": [
@@ -22,6 +22,27 @@
    "author": "losted.dev",
    "server_part": true,
    "logo": "logos/ru.lostos.edge-voice.png"
+  },
+  {
+   "id": "ru.lostos.fish-audio",
+   "name": "Голос Fish Audio",
+   "version": "1.1.0",
+   "about": "Озвучка ответов нейроголосом Fish Audio, в том числе клонированным: нужен свой ключ API с fish.audio и интернет. Тексты ответов уходят в Fish Audio. Ключ и голос вводятся на странице плагина в панели.",
+   "publisher": "losted.dev",
+   "fingerprint": "e8ad7d1df89448c6",
+   "file": "plugins/ru.lostos.fish-audio-1.1.0.lstplugin",
+   "sha256": "85848c503d3387509abb4d5dc2363ec2814e05b65c81b8113deb8cf11e1b37e7",
+   "size": 18766,
+   "min_firmware": "",
+   "permissions": [
+    "speech.tts",
+    "storage",
+    "assistant.tools"
+   ],
+   "category": "",
+   "author": "losted.dev",
+   "server_part": true,
+   "logo": "logos/ru.lostos.fish-audio.png"
   },
   {
    "id": "ru.lostos.music-stats",
